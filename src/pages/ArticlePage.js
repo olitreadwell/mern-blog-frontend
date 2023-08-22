@@ -6,6 +6,7 @@ import axios from "axios";
 // internal imports
 import NotFoundPage from "./NotFoundPage";
 import CommentsList from "../components/CommentsList";
+import AddCommentForm from "../components/AddCommentForm";
 
 // Data
 import articles from "./article-content";
@@ -52,11 +53,14 @@ const ArticlePage = () => {
             {article.content.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
             ))}
-            {articleInfo.comments.length > 0 ? (
-                <CommentsList comments={articleInfo.comments} />
-            ) : (
-                <p>No comments yet.</p>
-            )}
+            <AddCommentForm
+                articleId={articleId}
+                onUpdatedArticle={(updatedArticleInfo) =>
+                    setArticleInfo(updatedArticleInfo)
+                }
+            />
+
+            <CommentsList comments={articleInfo.comments} />
         </>
     );
 };
