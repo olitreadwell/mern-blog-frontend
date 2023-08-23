@@ -5,7 +5,7 @@ import axios from "axios";
 
 // internal imports
 import NotFoundPage from "./NotFoundPage";
-import CommentsList from "../components/CommentsList";
+import CommentsList from "../components/CommentsList/CommentsList";
 import AddCommentForm from "../components/AddCommentForm";
 
 // Data
