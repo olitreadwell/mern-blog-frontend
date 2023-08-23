@@ -17,7 +17,7 @@ h3, h4 {
 #page-body {
   max-width: 700px;
   margin: auto;
-  padding-top: 72px;
+  padding: 4.5rem 1rem 0;
 }
 
 #add-comment-form h3 {
