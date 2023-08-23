@@ -15,9 +15,9 @@ import LoginPage from "./pages/LoginPage";
 
 function App() {
     return (
-        <div className="App">
+        <main className="App">
             <NavBar />
-            <div id="page-body">
+            <section id="page-body">
                 <Routes>
                     <Route
                         path="/"
@@ -48,8 +48,8 @@ function App() {
                         element={<NotFoundPage />}
                     />
                 </Routes>
-            </div>
-        </div>
+            </section>
+        </main>
     );
 }
 
